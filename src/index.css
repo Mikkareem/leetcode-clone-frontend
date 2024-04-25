@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.easy-chip {
+		@apply rounded-full px-2 font-medium text-white bg-green-400
+	}
+	.medium-chip {
+		@apply rounded-full px-2 font-medium text-white bg-orange-500
+	}
+	.hard-chip {
+		@apply rounded-full px-2 font-medium text-white bg-red-500
+	}
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+}
+
+.gutter {
+    background-color: rgb(26,26,26);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.gutter:hover {
+	background-color: #0a84ff;
+}
+
+.gutter.gutter-vertical {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
+    cursor: row-resize;
+}
+
+.gutter.gutter-horizontal {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+    cursor: col-resize;
+}
+
+/* dark  scrollbar */
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+	background: #282828;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #4d4d4d;
+}
+
+.example-card pre {
+	background-color: hsla(0, 0%, 100%, 0.1);
+	border-radius: 0.5rem;
+	color: rgba(239, 241, 246, 0.75);
+	font-size: 0.98rem;
+	line-height: 1.25rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	padding: 1rem;
+	white-space: pre-wrap;
+}
+.example-card pre strong {
+	color: white;
+	font-size: 1rem;
+}
